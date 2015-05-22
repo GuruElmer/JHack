@@ -1,12 +1,12 @@
 jQuery(function($){
 	"use strict";
 
-var CONVOCATION = window.CONVOCATION || {};
+var JHacks = window.Jhacks || {};
 
 /* ==================================================
 	Contact Form Validations
 ================================================== */
-	CONVOCATION.RegistrationForm = function(){
+	JHacks.RegistrationForm = function(){
 		$('.registration-form').each(function(){
 			var formInstance = $(this);
 			formInstance.submit(function(){
@@ -41,7 +41,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
 	Scroll to Top
 ================================================== */
-	CONVOCATION.scrollToTop = function(){
+	JHacks.scrollToTop = function(){
 		var windowWidth = $(window).width(),
 			didScroll = false;
 
@@ -74,7 +74,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
    Accordion
 ================================================== */
-	CONVOCATION.accordion = function(){
+	JHacks.accordion = function(){
 		var accordion_trigger = $('.accordion-heading.accordionize');
 
 		accordion_trigger.delegate('.accordion-toggle','click', function(event){
@@ -94,7 +94,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
    Toggle
 ================================================== */
-	CONVOCATION.toggle = function(){
+	JHacks.toggle = function(){
 		var accordion_trigger_toggle = $('.accordion-heading.togglize');
 
 		accordion_trigger_toggle.delegate('.accordion-toggle','click', function(event){
@@ -112,7 +112,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
    Tooltip
 ================================================== */
-	CONVOCATION.toolTip = function(){
+	JHacks.toolTip = function(){
 		$('a[data-toggle=tooltip]').tooltip();
 		$('a[data-toggle=popover]').popover({html:true}).click(function(e) {
        e.preventDefault();
@@ -122,7 +122,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
    Twitter Widget
 ================================================== */
-	CONVOCATION.TwitterWidget = function() {
+	JHacks.TwitterWidget = function() {
 		$('.twitter-widget').each(function(){
 			var twitterInstance = $(this);
 			var twitterTweets = twitterInstance.attr("data-tweets-count") ? twitterInstance.attr("data-tweets-count") : "1"
@@ -137,7 +137,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
    Hero Flex Slider
 ================================================== */
-	CONVOCATION.heroflex = function() {
+	JHacks.heroflex = function() {
 		$('.flexslider').each(function(){
 				var carouselInstance = $(this);
 				var carouselAutoplay = carouselInstance.attr("data-autoplay") == 'yes' ? true : false
@@ -179,7 +179,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
    PrettyPhoto
 ================================================== */
-	CONVOCATION.PrettyPhoto = function() {
+	JHacks.PrettyPhoto = function() {
 		$("a[data-rel^='prettyPhoto']").prettyPhoto({
 			  opacity: 0.5,
 			  social_tools: "",
@@ -189,7 +189,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
    Animated Counters
 ================================================== */
-	CONVOCATION.Counters = function() {
+	JHacks.Counters = function() {
 		$('.counters').each(function () {
 			$(".timer .count").appear(function() {
 			var counter = $(this).html();
@@ -205,7 +205,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
    SuperFish menu
 ================================================== */
-	CONVOCATION.SuperFish = function() {
+	JHacks.SuperFish = function() {
 		$('.sf-menu').superfish({
 			  delay: 200,
 			  animation: {opacity:'show', height:'show'},
@@ -219,7 +219,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
    Header Functions
 ================================================== */
-	CONVOCATION.StickyHeader = function() {
+	JHacks.StickyHeader = function() {
 		var windowWidth = $(window).width(),
 		didScroll = false;
 
@@ -249,7 +249,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
 	Responsive Nav Menu
 ================================================== */
-	CONVOCATION.MobileMenu = function() {
+	JHacks.MobileMenu = function() {
 		// Responsive Menu Events
 		$('#menu-toggle').click(function(){
 			$(this).toggleClass("opened");
@@ -280,7 +280,7 @@ var CONVOCATION = window.CONVOCATION || {};
 /* ==================================================
    Flickr Widget
 ================================================== */
-	CONVOCATION.FlickrWidget = function() {
+	JHacks.FlickrWidget = function() {
 		$('.flickr-widget').each(function(){
 			var flickrInstance = $(this);
 			var flickrImages = flickrInstance.attr("data-images-count") ? flickrInstance.attr("data-images-count") : "1"
@@ -298,19 +298,19 @@ var CONVOCATION = window.CONVOCATION || {};
    Init Functions
 ================================================== */
 $(document).ready(function(){
-	CONVOCATION.RegistrationForm();
-	CONVOCATION.scrollToTop();
-	CONVOCATION.accordion();
-	CONVOCATION.toggle();
-	CONVOCATION.toolTip();
-	CONVOCATION.TwitterWidget();
-	CONVOCATION.PrettyPhoto();
-	CONVOCATION.SuperFish();
-	CONVOCATION.Counters();
-	CONVOCATION.StickyHeader();
-	CONVOCATION.MobileMenu();
-	CONVOCATION.heroflex();
-	CONVOCATION.FlickrWidget();
+	JHacks.RegistrationForm();
+	JHacks.scrollToTop();
+	JHacks.accordion();
+	JHacks.toggle();
+	JHacks.toolTip();
+	JHacks.TwitterWidget();
+	JHacks.PrettyPhoto();
+	JHacks.SuperFish();
+	JHacks.Counters();
+	JHacks.StickyHeader();
+	JHacks.MobileMenu();
+	JHacks.heroflex();
+	JHacks.FlickrWidget();
 });
 
 
@@ -386,7 +386,7 @@ $(document).ready(function(){
 			$(this).addClass('opened');
 		}
 	});
-	CONVOCATION.StickyHeader();
+	JHacks.StickyHeader();
 });
 
 $(window).resize(function(){
