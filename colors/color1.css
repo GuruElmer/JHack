@@ -1,8 +1,8 @@
 .text-primary, .btn-primary .badge, .btn-link,a.list-group-item.active > .badge,.nav-pills > .active > a > .badge, p.drop-caps:first-child:first-letter, .accent-color, .basic-link, .pagination > li > a:hover,.pagination > li > span:hover,.pagination > li > a:focus,.pagination > li > span:focus, .flexslider .flex-prev:hover, .flexslider .flex-next:hover, .accordion-heading:hover .accordion-toggle, .accordion-heading:hover .accordion-toggle.inactive, .accordion-heading:hover .accordion-toggle i, .team-item-overlay a, .nav-tabs li.active > i{
-	color:#579bd3;
+	color:#f37520;
 }
 a:hover{
-	color:#579bd3;
+	color:#f37520;
 }
 .basic-link:hover{
 	opacity:.9
@@ -41,14 +41,14 @@ a.list-group-item.active,
 a.list-group-item.active:hover,
 a.list-group-item.active:focus, .accordion-heading .accordion-toggle.active, .accordion-heading:hover .accordion-toggle.active,
 .panel-primary > .panel-heading, .carousel-indicators .active, .flex-control-nav a:hover, .flex-control-nav a.flex-active, .nav-tabs li a:active, .nav-tabs li.active a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus, .main-navigation > ul > li > a:hover, .main-navigation > ul > li > a.current, .main-navigation > ul > li.highlight a:hover, .team-item-overlay a:hover, #weather, #back-to-top:hover, .plan-style1, .social-icons li a:hover{
-  background-color: #579bd3;
+  background-color: #f37520;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary, .top-menu li a:hover{
-  background: #579bd3;
+  background: #f37520;
   opacity:.9
 }
 .nav .open > a,
@@ -68,13 +68,13 @@ a.list-group-item.active:hover,
 a.list-group-item.active:focus,
 .panel-primary,
 .panel-primary > .panel-heading, .flexslider .flex-prev:hover, .flexslider .flex-next:hover, .social-icons li a:hover{
-	border-color:#579bd3;
+	border-color:#f37520;
 }
 .panel-primary > .panel-heading + .panel-collapse .panel-body{
-	border-top-color:#579bd3;
+	border-top-color:#f37520;
 }
 .panel-primary > .panel-footer + .panel-collapse .panel-body, .nav-tabs li a:active, .nav-tabs li.active a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
-	border-bottom-color:#579bd3;
+	border-bottom-color:#f37520;
 }
 /* Color Scheme Specific Classes */
 .accent-color-secondary, .meta-data, .meta-data a, .quick-venue-info-details .ico:hover{
